@@ -1,0 +1,94 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('House.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); /* Adjust the blur intensity as needed */
+    z-index: -1;
+}
+
+button {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.heading h1 {
+    background-color: #4285f4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(66, 133, 244, 0.2);
+}
+
+#result {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #3367d6;
+    box-shadow: 0 6px 12px rgba(66, 133, 244, 0.4);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form label {
+    padding-left: 80px;
+    font-size: 25px;
+    color: #FFFF;
+    display: block;
+}
+
+.form input,
+.form select {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    grid-column: span 2;
+    background-color: #4285f4;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.form button:hover {
+    background-color: #3367d6;
+    box-shadow: 0 6px 12px rgba(66, 133, 244, 0.4);
+}

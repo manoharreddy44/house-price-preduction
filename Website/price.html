@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>House Price Prediction</h1>
+    </div>
+    <div class="card">
+        <form id="predictionForm" class="form">
+            <label for="area">Area (sq. ft.):</label>
+            <input type="number" id="area" name="area" required>
+            
+            <label for="bedrooms">Bedrooms:</label>
+            <input type="number" id="bedrooms" name="bedrooms" required>
+            
+            <label for="bathrooms">Bathrooms:</label>
+            <input type="number" id="bathrooms" name="bathrooms" required>
+            
+            <label for="stories">Stories:</label>
+            <input type="number" id="stories" name="stories" required>
+            
+            <label for="mainroad">Main Road (yes/no):</label>
+            <input type="text" id="mainroad" name="mainroad" required>
+            
+            <label for="guestroom">Guest Room (yes/no):</label>
+            <input type="text" id="guestroom" name="guestroom" required>
+            
+            <label for="basement">Basement (yes/no):</label>
+            <input type="text" id="basement" name="basement" required>
+            
+            <label for="hotwaterheating">Hot Water Heating (yes/no):</label>
+            <input type="text" id="hotwaterheating" name="hotwaterheating" required>
+            
+            <label for="airconditioning">Air Conditioning (yes/no):</label>
+            <input type="text" id="airconditioning" name="airconditioning" required>
+            
+            <label for="parking">Parking Spaces:</label>
+            <input type="number" id="parking" name="parking" required>
+            
+            <label for="prefarea">Preferred Area (yes/no):</label>
+            <input type="text" id="prefarea" name="prefarea" required>
+            
+            <label for="furnishingstatus">Furnishing Status:</label>
+            <select id="furnishingstatus" name="furnishingstatus" required>
+                <option value="furnished">Furnished</option>
+                <option value="semi-furnished">Semi-Furnished</option>
+                <option value="unfurnished">Unfurnished</option>
+            </select>
+
+            <!-- New input for 'city' -->
+            <label for="city">City:</label>
+                <select id="city" name="city" required>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="bengaluru">Bengaluru</option>
+                <option value="pune">Pune</option>
+                <option value="kolkata">Kolkata</option>
+                <option value="ahmedabad">Ahmedabad</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="vadodara">Vadodara</option>
+                <option value="chennai">Chennai</option>
+                <option value="jaipur">Jaipur</option>
+                <option value="surat">Surat</option>
+                <option value="lucknow">Lucknow</option>
+                <option value="udaipur">Udaipur</option>
+                <option value="kanpur">Kanpur</option>
+                <option value="nashik">Nashik</option>
+                <option value="nagpur">Nagpur</option>
+                <option value="ludhiana">Ludhiana</option>
+                <option value="coimbatore">Coimbatore</option>
+                <option value="indore">Indore</option>
+                <option value="chandigarh">Chandigarh</option>
+                <option value="bhopal">Bhopal</option>
+                <option value="patna">Patna</option>
+                <option value="rajkot">Rajkot</option>
+                <option value="raipur">Raipur</option>
+                <option value="guwahati">Guwahati</option>
+                <option value="ranchi">Ranchi</option>
+                <option value="bhubaneshwar">Bhubaneshwar</option>
+                <option value="jamshedpur">Jamshedpur</option>
+                <option value="dehradun">Dehradun</option>
+                <option value="aurangabad">Aurangabad</option>
+            </select>
+
+    
+            <button type="button" onclick="predictPrice()">Predict Price</button>
+        </form>
+    </div>
+    <p id="result"></p>
+
+    <script src="functions.js"></script>
+
+    <!-- <span>&copy; Satyam Rana</span> -->
+</body>
+</html>
